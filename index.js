@@ -3,9 +3,8 @@ const { Boom } = require('@hapi/boom')
 const P = require('pino')
 const express = require('express')
 const app = express()
-const DONO = '258841067961@s.whatsapp.net'
-const NUMERO = '258841067961'
-
+const DONO = '258841066314@s.whatsapp.net'
+const NUMERO = '258841066314'
 async function startBot(){
 const { state, saveCreds } = await useMultiFileAuthState('./auth')
 const sock = makeWASocket({ auth: state, logger: P({level:'silent'}), printQRInTerminal:false, browser:['Bot Fenias','Chrome','1.0.0'] })
